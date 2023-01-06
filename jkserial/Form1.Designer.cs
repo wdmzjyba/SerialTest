@@ -97,9 +97,9 @@
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 491);
+            this.panel1.Location = new System.Drawing.Point(0, 543);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(791, 30);
+            this.panel1.Size = new System.Drawing.Size(1114, 30);
             this.panel1.TabIndex = 0;
             // 
             // panel6
@@ -109,7 +109,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(200, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(387, 26);
+            this.panel6.Size = new System.Drawing.Size(710, 26);
             this.panel6.TabIndex = 2;
             // 
             // lblRxNum
@@ -134,7 +134,7 @@
             // 
             this.panel5.Controls.Add(this.linkLabel1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(587, 0);
+            this.panel5.Location = new System.Drawing.Point(910, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 26);
             this.panel5.TabIndex = 1;
@@ -177,7 +177,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 491);
+            this.panel2.Size = new System.Drawing.Size(200, 543);
             this.panel2.TabIndex = 1;
             // 
             // groupBox3
@@ -485,7 +485,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(200, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(591, 491);
+            this.panel3.Size = new System.Drawing.Size(914, 543);
             this.panel3.TabIndex = 2;
             // 
             // splitContainer1
@@ -504,17 +504,17 @@
             this.splitContainer1.Panel2.Controls.Add(this.cmbSendList);
             this.splitContainer1.Panel2.Controls.Add(this.btnSend);
             this.splitContainer1.Panel2.Controls.Add(this.txtSendData);
-            this.splitContainer1.Size = new System.Drawing.Size(587, 487);
-            this.splitContainer1.SplitterDistance = 362;
+            this.splitContainer1.Size = new System.Drawing.Size(910, 539);
+            this.splitContainer1.SplitterDistance = 400;
             this.splitContainer1.TabIndex = 0;
             // 
             // txtSerialData
             // 
-            this.txtSerialData.Dock = System.Windows.Forms.DockStyle.Left;
+            this.txtSerialData.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtSerialData.Location = new System.Drawing.Point(0, 0);
             this.txtSerialData.Multiline = true;
             this.txtSerialData.Name = "txtSerialData";
-            this.txtSerialData.Size = new System.Drawing.Size(584, 362);
+            this.txtSerialData.Size = new System.Drawing.Size(910, 400);
             this.txtSerialData.TabIndex = 0;
             // 
             // cmbSendList
@@ -522,9 +522,9 @@
             this.cmbSendList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbSendList.FormattingEnabled = true;
-            this.cmbSendList.Location = new System.Drawing.Point(4, 95);
+            this.cmbSendList.Location = new System.Drawing.Point(4, 109);
             this.cmbSendList.Name = "cmbSendList";
-            this.cmbSendList.Size = new System.Drawing.Size(573, 20);
+            this.cmbSendList.Size = new System.Drawing.Size(896, 20);
             this.cmbSendList.TabIndex = 2;
             this.cmbSendList.SelectedIndexChanged += new System.EventHandler(this.cmbSendList_SelectedIndexChanged);
             // 
@@ -537,7 +537,7 @@
             this.btnSend.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSend.FlatAppearance.BorderSize = 0;
             this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSend.Location = new System.Drawing.Point(511, 31);
+            this.btnSend.Location = new System.Drawing.Point(834, 38);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(40, 40);
             this.btnSend.TabIndex = 1;
@@ -552,7 +552,7 @@
             this.txtSendData.Location = new System.Drawing.Point(3, 6);
             this.txtSendData.Multiline = true;
             this.txtSendData.Name = "txtSendData";
-            this.txtSendData.Size = new System.Drawing.Size(475, 83);
+            this.txtSendData.Size = new System.Drawing.Size(798, 97);
             this.txtSendData.TabIndex = 0;
             // 
             // serialPort1
@@ -571,7 +571,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(791, 521);
+            this.ClientSize = new System.Drawing.Size(1114, 573);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

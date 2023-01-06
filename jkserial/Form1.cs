@@ -9,7 +9,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using log4net;
 namespace jkserial
 {
     public partial class Form1 : Form
@@ -18,9 +18,20 @@ namespace jkserial
         private long send_count = 0;    //发送字节计数
         private StringBuilder sb = new StringBuilder();
         private DateTime current_time = new DateTime();
+        private static ILog log = log4net.LogManager.GetLogger("Test");
+        private void InitGridView()
+        {
+            /*
+            dgvDataList.ColumnCount = 4;
+            dgvDataList.Columns[0].Name = "学号";
+            dgvDataList.Columns[1].Name = "姓名";
+            dgvDataList.Columns[2].Name = "性别";
+            dgvDataList.Columns[3].Name = "联系方式";*/
+        }
         public Form1()
         {
             InitializeComponent();
+            InitGridView();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -37,6 +48,7 @@ namespace jkserial
             nudInterval.Value = 1000;
             timer2.Interval = 1000;
             timer2.Start();
+            log.Info("窗体加载");
         }
 
         private void btnSwitchSerial_Click(object sender, EventArgs e)
@@ -189,6 +201,7 @@ namespace jkserial
                     {
                         cmbSendList.Items.Add(txtSendData.Text);
                     }
+                    log.Info("发送一次数据");
                 }
             }
             catch (Exception ex)
